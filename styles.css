@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..700&display=swap');
+
+body {
+  margin: 0;
+  padding-top: 100px;
+  font-family: 'Roboto Mono', sans-serif;
+}
+
+.bio, .projects, .hero, .contact {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 100px 20px 0 20px;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: rgb(87, 87, 87);
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pfp {
+  width: 150px;
+  height: 150px;
+  border-radius: 50px;
+}
+
+.projects a {
+  color: rgb(20, 20, 20);
+  text-decoration: none;
+}
+
+.projects a:hover {
+  color: rgb(87, 87, 87);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid #e7e7e7;
+  z-index: 1000;
+}
+
+.navbar-inner {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.hamburger {
+  display: none;
+  width: 30px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.hamburger div {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: black;
+  transition: 0.3s;
+}
+
+.hamburger div:nth-child(1) { top: 0; }
+.hamburger div:nth-child(2) { top: 8px; }
+.hamburger div:nth-child(3) { top: 16px; }
+
+.hamburger.active div:nth-child(1) {
+  transform: rotate(45deg);
+  top: 8px;
+}
+
+.hamburger.active div:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active div:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 8px;
+}
+
+@media (max-width: 700px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: white;
+    flex-direction: column;
+    padding: 15px;
+    border: 1px solid #e7e7e7;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+  }
+
+  .nav-links.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  padding: 10px;
+  border: none;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #e7e7e7;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayaan Dhalait</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Ayaan Dhalait is a Computer Programmer, Front-End Developer and Ex-CTO of the Student Initiative Board.">
+<meta name="keywords" content="Ayaan Dhalait, developer, programmer, Python, Pygame, web developer, portfolio">
+<meta name="author" content="Ayaan Dhalait">
+<link rel="canonical" href="https://ayaan.is-a.dev">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<meta property="og:title" content="Ayaan Dhalait">
+<meta property="og:description" content="Developer building games, tools, and web applications.">
+<meta property="og:url" content="https://ayaan.is-a.dev">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://ayaan.is-a.dev/banner.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ayaan Dhalait">
+<meta name="twitter:description" content="Developer building games and software.">
+<meta name="twitter:image" content="https://ayaan.is-a.dev/banner.png">
+<meta name="twitter:creator" content="@AyaanDhalait">
+
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ayaan Dhalait",
+  "url": "https://ayaan.is-a.dev",
+  "image": "https://ayaan.is-a.dev/banner.png",
+  "sameAs": [
+    "https://ayaan.is-a.dev",
+    "https://www.youtube.com/@AyaanDhalait",
+    "https://github.com/AyaanDhalait",
+    "https://instagram.com/ayaandhalait",
+    "https://about.me/ayaandhalait",
+    "https://www.wikidata.org/wiki/Q138838768",
+    "https://x.com/AyaanDhalait",
+    "https://dev.to/ayaandhalait",
+    "https://pypi.org/user/AyaanDhalait/",
+    "https://in.pinterest.com/ayaandhalait/"
+  ],
+  "jobTitle": "Computer Programmer",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Student Initiative Board (SIB)",
+    "url": "https://sibglobal.github.io/"
+  },
+  "knowsAbout": [
+    "Python",
+    "Game Development",
+    "Web Development",
+    "Pygame",
+    "JavaScript",
+    "HTML",
+    "CSS"
+  ]
+}
+</script>
+</head>
+<body>
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="/" class="logo">Ayaan Dhalait</a>
+
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div class="nav-links" id="navLinks">
+      <a href="#bio">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+  <section class="hero">
+    <div class="hero-container">
+      <h1>Ayaan Dhalait</h1>
+      <img src="Ayaan.png" alt="Profile Picture" class="pfp">
+    </div>
+    <p class="subtitle">Web Developer and Former CTO</p>
+  </section>
+  <section class="bio" id="bio">
+    <h2>About Me</h2>
+    <p class="subtitle">Hey, I'm <strong>Ayaan Dhalait</strong>, I am a Front-End Web Developer and Computer Programmer who primarily uses Python as my main language and HTML, CSS and Javascript for my Web Development work. I began My programming journey in 2017 as a literal 5 year old when I found Scratch 1.4 (MIT) on one of my uncle's desktop. I began making short stroies after I figured out what I could do with the program. later I began learning Web Development after the academical portion inspired me. Looking Into the Future I want to become a Computer Scientist and Software Developer via graduating with a Computer Science Degree.</p>
+  </section>
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <a class="project" href="https://github.com/AyaanDhalait/pyKp130">> pyKp130 - Github</a><br>
+    <a class="project" href="https://github.com/AyaanDhalait/Pillow">> Pillow - Github</a><br>
+    <a class="project" href="https://github.com/AyaanDhalait/pplayer">> pplayer - Github</a><br>
+    <a class="project" href="https://github.com/AyaanDhalait/Terminal>">> Web Terminal - Github</a><br>
+    <a class="project" href="https://github.com/AyaanDhalait/Digital-Life-Form">> Digital Life Form - Github</a><br>
+    <a class="project" href="https://github.com/AyaanDhalait/Fun-Day-Before-Monday">> Fun Day Before Monday - Github</a><br>
+    <a class="project" href="https://github.com/AyaanDhalait/PersonalWebsite">> Personal Website - Github</a><br>
+    <a class="project" href="https://sibglobal.github.io/">> Student Initiative Board Website - Website</a><br>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact</h2>
+    <p class="subtitle">Feel free to reach out to me!</p>
+    <form class="contact-form" action="https://formspree.io/f/xwvavoee" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      
+      <input type="email" name="email" placeholder="Your Email" required>
+      
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      
+      <button type="submit">Send Message</button>
+    </form>
+  </section><br><br>
+
+<footer>
+  <p>&copy; 2026-Present Ayaan Dhalait. All rights reserved.</p>
+</footer>
+<script>
+function toggleMenu() {
+  const nav = document.getElementById("navLinks");
+  const burger = document.getElementById("hamburger");
+  nav.classList.toggle("active");
+  burger.classList.toggle("active");
+}
+</script>
+</body>
+</html>

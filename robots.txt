@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ayaan.is-a.dev/sitemap.xml
+
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /*.log$
+Disallow: /*.sql$
