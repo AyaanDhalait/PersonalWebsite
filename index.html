@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ayaan Dhalait</title>
-  <link rel="stylesheet" href="styles.css">
-  <meta name="description" content="Ayaan Dhalait is a Computer Programmer, Front-End Developer and Ex-CTO of the Student Initiative Board.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ayaan Dhalait</title>
+<link rel="stylesheet" href="styles.css">
+<meta name="description" content="Ayaan Dhalait is a Computer Programmer, Front-End Developer and Ex-CTO of the Student Initiative Board.">
 <meta name="keywords" content="Ayaan Dhalait, developer, programmer, Python, Pygame, web developer, portfolio">
 <meta name="author" content="Ayaan Dhalait">
 <link rel="canonical" href="https://ayaan.is-a.dev">
@@ -66,63 +66,82 @@
 <body>
 <nav class="navbar">
   <div class="navbar-inner">
-    <a href="/" class="logo">Ayaan Dhalait</a>
-
     <div class="hamburger" id="hamburger" onclick="toggleMenu()">
       <div></div>
       <div></div>
       <div></div>
     </div>
 
+    <a href="/" class="logo">Ayaan Dhalait</a>
+
     <div class="nav-links" id="navLinks">
-      <a href="#bio">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <a href="#bio" onclick="toggleMenu()">About</a>
+      <a href="#projects" onclick="toggleMenu()">Projects</a>
+      <a href="#contact" onclick="toggleMenu()">Contact</a>
     </div>
+
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
   </div>
 </nav>
 
-  <section class="hero">
-    <div class="hero-container">
+<section class="hero">
+  <div class="hero-container">
+    <div>
       <h1>Ayaan Dhalait</h1>
-      <img src="Ayaan.png" alt="Profile Picture" class="pfp">
+      <p class="subtitle">Web Developer • Python Programmer • Builder</p>
     </div>
-    <p class="subtitle">Web Developer and Former CTO</p>
-  </section>
-  <section class="bio" id="bio">
-    <h2>About Me</h2>
-    <p class="subtitle">Hey, I'm <strong>Ayaan Dhalait</strong>, I am a Front-End Web Developer and Computer Programmer who primarily uses Python as my main language and HTML, CSS and Javascript for my Web Development work. I began My programming journey in 2017 as a literal 5 year old when I found Scratch 1.4 (MIT) on one of my uncle's desktop. I began making short stroies after I figured out what I could do with the program. later I began learning Web Development after the academical portion inspired me. Looking Into the Future I want to become a Computer Scientist and Software Developer via graduating with a Computer Science Degree.</p>
-  </section>
-  <section class="projects" id="projects">
-    <h2>Projects</h2>
-    <p class="subtitle">Below are all of my public projects</p>
-    <a class="project" href="https://github.com/AyaanDhalait/pyKp130">> pyKp130 - Github</a><br>
-    <a class="project" href="https://github.com/AyaanDhalait/Pillow">> Pillow - Github</a><br>
-    <a class="project" href="https://github.com/AyaanDhalait/pplayer">> pplayer - Github</a><br>
-    <a class="project" href="https://github.com/AyaanDhalait/Terminal>">> Web Terminal - Github</a><br>
-    <a class="project" href="https://github.com/AyaanDhalait/Digital-Life-Form">> Digital Life Form - Github</a><br>
-    <a class="project" href="https://github.com/AyaanDhalait/Fun-Day-Before-Monday">> Fun Day Before Monday - Github</a><br>
-    <a class="project" href="https://github.com/AyaanDhalait/PersonalWebsite">> Personal Website - Github</a><br>
-    <a class="project" href="https://sibglobal.github.io/">> Student Initiative Board Website - Website</a><br>
-  </section>
+    <img src="Ayaan.png" alt="Profile Picture" class="pfp">
+  </div>
+</section>
 
-  <section class="contact" id="contact">
-    <h2>Contact</h2>
-    <p class="subtitle">Feel free to reach out to me!</p>
-    <form class="contact-form" action="https://formspree.io/f/xwvavoee" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      
-      <input type="email" name="email" placeholder="Your Email" required>
-      
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-      
-      <button type="submit">Send Message</button>
-    </form>
-  </section><br><br>
+<section class="bio" id="bio">
+  <h2>About Me</h2>
+  <p class="subtitle">
+    Hey, I'm <strong>Ayaan Dhalait</strong>, a Front-End Developer and Programmer.
+    I started coding at age 5 using Scratch and now build web apps, tools, and games.
+    I'm aiming to become a Computer Scientist in the future.
+  </p>
+</section>
+
+<section class="projects" id="projects">
+  <h2>Projects</h2>
+  <p class="subtitle">Below are all of my public projects</p>
+
+  <div class="project-grid">
+    <a class="project" href="https://github.com/AyaanDhalait/pyKp130" target="_blank">pyKp130</a>
+    
+    <a class="project" href="https://github.com/AyaanDhalait/Pillow" target="_blank">Pillow</a>
+    
+    <a class="project" href="https://github.com/AyaanDhalait/pplayer" target="_blank">pplayer</a>
+    
+    <a class="project" href="https://github.com/AyaanDhalait/Terminal" target="_blank">Web Terminal</a>
+    
+    <a class="project" href="https://github.com/AyaanDhalait/Digital-Life-Form" target="_blank">Digital Life Form</a>
+    
+    <a class="project" href="https://github.com/AyaanDhalait/Fun-Day-Before-Monday" target="_blank">Fun Day Before Monday</a>
+    
+    <a class="project" href="https://github.com/AyaanDhalait/PersonalWebsite" target="_blank">Personal Website</a>
+    
+    <a class="project" href="https://sibglobal.github.io/" target="_blank">Student Initiative Board Website</a>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Contact</h2>
+  <p class="subtitle">Reach out anytime</p>
+
+  <form class="contact-form" action="https://formspree.io/f/xwvavoee" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
 
 <footer>
-  <p>&copy; 2026-Present Ayaan Dhalait. All rights reserved.</p>
+  <p>&copy; 2026-Present Ayaan Dhalait. All Rights Reserved.</p>
 </footer>
+
 <script>
 function toggleMenu() {
   const nav = document.getElementById("navLinks");

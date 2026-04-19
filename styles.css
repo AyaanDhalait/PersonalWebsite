@@ -2,66 +2,48 @@
 
 body {
   margin: 0;
-  padding-top: 100px;
-  font-family: 'Roboto Mono', sans-serif;
+  padding-top: 90px;
+  font-family: 'Roboto Mono', monospace;
+  background: #fafafa;
+  color: #111;
 }
 
 .bio, .projects, .hero, .contact {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 100px 20px 0 20px;
+  max-width: 1100px;
+  margin: auto;
+  padding: 100px 20px 0;
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 64px;
+  margin: 0;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 36px;
+  margin-bottom: 10px;
 }
 
 .subtitle {
-  font-size: 20px;
-  color: rgb(87, 87, 87);
-}
-
-.hero-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.pfp {
-  width: 150px;
-  height: 150px;
-  border-radius: 50px;
-}
-
-.projects a {
-  color: rgb(20, 20, 20);
-  text-decoration: none;
-  display: inline-block;
-  transition: transform 0.3s ease;
-}
-
-.projects a:hover {
-  color: rgb(87, 87, 87);
-  transform: translateX(10px);  
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
 }
 
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  background: white;
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.7);
   border-bottom: 1px solid #e7e7e7;
   z-index: 1000;
 }
 
 .navbar-inner {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
-  padding: 20px;
+  padding: 18px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -69,19 +51,133 @@ h2 {
 
 .logo {
   text-decoration: none;
+  font-weight: 600;
   color: black;
   font-size: 20px;
 }
 
 .nav-links {
   display: flex;
-  gap: 20px;
-  transition: all 0.3s ease;
+  gap: 25px;
 }
 
 .nav-links a {
   text-decoration: none;
   color: black;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  z-index: 900;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.pfp {
+  width: 160px;
+  height: 160px;
+  border-radius: 20px;
+  transition: transform 0.4s ease;
+}
+
+.pfp:hover {
+  transform: scale(1.05);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.project {
+  padding: 15px;
+  border: 1px solid #e7e7e7;
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+  background: white;
+  display: block;
+  font-weight: 500;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  border-color: black;
+}
+
+.project::after {
+  content: " ↗";
+  font-size: 14px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+
+.contact-form button {
+  padding: 12px;
+  border: none;
+  background: black;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  opacity: 0.8;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  margin-top: 50px;
+  border-top: 1px solid #e7e7e7;
 }
 
 .hamburger {
@@ -90,6 +186,7 @@ h2 {
   height: 20px;
   position: relative;
   cursor: pointer;
+  z-index: 1100;
 }
 
 .hamburger div {
@@ -97,7 +194,7 @@ h2 {
   width: 100%;
   height: 3px;
   background: black;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 .hamburger div:nth-child(1) { top: 0; }
@@ -124,62 +221,37 @@ h2 {
   }
 
   .nav-links {
-    position: absolute;
-    top: 70px;
-    right: 20px;
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 260px;
+    height: 100%;
     background: white;
     flex-direction: column;
-    padding: 15px;
-    border: 1px solid #e7e7e7;
-    opacity: 0;
-    transform: translateY(-10px);
-    pointer-events: none;
+    padding: 80px 20px;
+    gap: 25px;
+    transition: 0.4s ease;
+    z-index: 1000;
+  }
+
+  .nav-links a {
+    font-size: 18px;
   }
 
   .nav-links.active {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
+    left: 0;
   }
-}
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 500px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-}
-
-.contact-form button {
-  padding: 10px;
-  border: none;
-  background: black;
-  color: white;
-  cursor: pointer;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  border-top: 1px solid #e7e7e7;
-}
-
-@media (max-width: 700px) {
-  .bio, .projects, .hero, .contact {
-    padding: 50px 20px 0 20px;
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
   }
 
   h1 {
-    font-size: 40px;
+    font-size: 42px;
   }
 
   h2 {
-    font-size: 30px;
+    font-size: 28px;
   }
 }
