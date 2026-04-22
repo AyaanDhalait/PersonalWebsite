@@ -4,8 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ayaan Dhalait</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <meta name="description" content="Ayaan Dhalait is a Computer Programmer, Front-End Developer and Ex-CTO of the Student Initiative Board.">
 <meta name="keywords" content="Ayaan Dhalait, developer, programmer, Python, Pygame, web developer, portfolio">
@@ -17,12 +15,13 @@
 <meta property="og:url" content="https://ayaan.is-a.dev">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://ayaan.is-a.dev/banner.png">
-<meta name="google-site-verification" content="aP6ooWK8mL7Z_kcAhGkkXgF8lrvb8jZ8vC7Q0F4RgmU" />
+
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Ayaan Dhalait">
 <meta name="twitter:description" content="Developer building games and software.">
 <meta name="twitter:image" content="https://ayaan.is-a.dev/banner.png">
 <meta name="twitter:creator" content="@AyaanDhalait">
+
 <link rel="icon" href="/favicon.ico">
 <link rel="stylesheet" href="styles.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
@@ -64,20 +63,43 @@
 }
 </script>
 </head>
+<body>
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="/" class="logo">Ayaan Dhalait</a>
 
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
 
-<body class="notfound-body">
+    <div class="nav-links" id="navLinks">
+      <a href="#bio">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
 
-<div class="notfound-container">
-  <img src="Ayaan.png" class="notfound-img">
+  <section class="hero">
+    <div class="hero-container">
+      <h1>404</h1>
+      <img src="Ayaan.png" alt="Profile Picture" class="pfp">
+    </div>
+    <p class="subtitle">Oops! looks like the page you're looking for doesn't exist or has been moved.</p>
+  </section>
 
-  <h1>404</h1>
-  <h2>Page Not Found</h2>
-
-  <p>The page you’re looking for doesn’t exist or was moved.</p><br><br>
-
-  <a href="/" class="btn primary">Go Home</a>
-</div>
-
+<footer>
+  <p>&copy; 2026-Present Ayaan Dhalait. All rights reserved.</p>
+</footer>
+<script>
+function toggleMenu() {
+  const nav = document.getElementById("navLinks");
+  const burger = document.getElementById("hamburger");
+  nav.classList.toggle("active");
+  burger.classList.toggle("active");
+}
+</script>
 </body>
 </html>
