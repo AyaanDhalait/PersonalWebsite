@@ -65,45 +65,19 @@
 </script>
 </head>
 
-<body>
 
-<nav>
-  <a href="#home" class="logo">Ayaan Dhalait</a>
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#work">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+<body class="notfound-body">
 
-<div class="hero" id="home">
-  <div class="hero-content">
-    <div class="profile">
-      <img src="Ayaan.png">
-    </div>
-    <div class="hero-text">
-      <h1>404</h1>
-      <p>Oops! looks like this page doesn't exist or has been moved.</p>
-      <a href="/index.html" class="btn">Go Home</a>
-    </div>
-  </div>
+<div class="notfound-container">
+  <img src="Ayaan.png" class="notfound-img">
+
+  <h1>404</h1>
+  <h2>Page Not Found</h2>
+
+  <p>The page you’re looking for doesn’t exist or was moved.</p><br><br>
+
+  <a href="/" class="btn primary">Go Home</a>
 </div>
-<footer>
-  © 2026-Present Ayaan Dhalait. All Rights Reserved
-</footer>
-
-<script>
-document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
-  anchor.addEventListener('click',function(e){
-    e.preventDefault()
-    const target=document.querySelector(this.getAttribute('href'))
-    window.scrollTo({
-      top:target.offsetTop-80,
-      behavior:'smooth'
-    })
-  })
-})
-</script>
 
 </body>
 </html>
