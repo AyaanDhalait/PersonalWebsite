@@ -258,3 +258,37 @@
 html {
     scroll-behavior: smooth;
 }
+
+.notfound-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.notfound-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.notfound-img {
+  width: 120px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.notfound-container h1 {
+  font-size: 6rem;
+  font-weight: 800;
+}
+
+.notfound-container h2 {
+  margin-top: 10px;
+  color: #aaa;
+}
+
+.notfound-container p {
+  margin-top: 20px;
+  color: #888;
+}
