@@ -58,8 +58,19 @@ footer {
     padding: 10px;
 }
 
+
+.timeline {
+    border-left: 3px solid rgb(236, 44, 44);
+    padding-left: 15px;
+}
+
+.item {
+    margin-bottom: 25px;
+}
+
 .year {
     color: rgb(236, 44, 44);
+    font-weight: 600;
 }
 
 .pfp {
