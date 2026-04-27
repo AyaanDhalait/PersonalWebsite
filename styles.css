@@ -80,6 +80,47 @@ footer {
     object-fit: cover;
 }
 
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    max-width: 500px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    font-family: 'Pixelify Sans', sans-serif;
+    padding: 12px;
+    border: 2px solid rgb(236, 44, 44);
+    background: transparent;
+    color: black;
+    font-size: 16px;
+    outline: none;
+    border-radius: 6px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: black;
+}
+
+.contact-form button {
+    font-family: 'Pixelify Sans', sans-serif;
+    padding: 12px;
+    background: rgb(236, 44, 44);
+    color: white;
+    border: 2px solid black;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.2s ease;
+}
+
+.contact-form button:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(236, 44, 44);
+}
 
 @media screen and (max-width: 800px) {
 
