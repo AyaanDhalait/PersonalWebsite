@@ -136,38 +136,21 @@
     </section>
 
     <section class="projects">
-        <h1>Projects</h1>
-        <div id="project-list"></div>
-    </section>
+    <h1>Projects</h1>
+
+    <div class="project-list">
+
+        <div class="project-card">
+            <h3><a href="https://timetogo.ayaan.is-a.dev/" target="_blank">TimeToGo</a></h3>
+            <p>A CLI based app for finding best and top rated villas and hotels in your area.</p>
+        </div>
+    </div>
+</section><br><br>
 
     <hr width="400px">
 
     <footer>
         &copy; Ayaan Dhalait. All Rights Reserved.
     </footer>
-
-    <script>
-        const username = "AyaanDhalait";
-        const repoContainer = document.getElementById("project-list");
-
-        fetch(`https://api.github.com/users/${username}/repos`)
-            .then(res => res.json())
-            .then(repos => {
-                repos
-                    .filter(r => !r.fork)
-                    .sort((a, b) => b.stargazers_count - a.stargazers_count)
-                    .forEach(repo => {
-                        const card = document.createElement("div");
-                        card.className = "project-card";
-                        card.innerHTML = `
-                            <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
-                            <p>${repo.description || "No description provided."}</p>
-                            <small>⭐ ${repo.stargazers_count}</small>
-                        `;
-                        repoContainer.appendChild(card);
-                    });
-            });
-    </script>
-
 </body>
 </html>
