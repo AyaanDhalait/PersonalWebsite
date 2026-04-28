@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayaan Dhalait</title>
-    <link rel="stylesheet" href="styles.css">
-    <meta name="description" content="Ayaan Dhalait is a Computer Programmer, Front-End Developer and Ex-CTO of the Student Initiative Board.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ayaan Dhalait</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+<meta name="description" content="Ayaan Dhalait is a Computer Programmer, Front-End Developer and Ex-CTO of the Student Initiative Board.">
     <meta name="keywords" content="Ayaan Dhalait, developer, programmer, Python, Pygame, web developer, portfolio">
     <meta name="author" content="Ayaan Dhalait">
     <link rel="canonical" href="https://ayaan.is-a.dev">
@@ -21,7 +22,6 @@
     <meta name="twitter:image" content="https://ayaan.is-a.dev/banner.png">
     <meta name="twitter:creator" content="@AyaanDhalait">
     <link rel="icon" href="/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">  
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -58,115 +58,538 @@
       ]
     }
     </script>
-    </head>
+</head>
+
 <body>
 
-    <section class="hero">
-        <div class="hero-content">
-            <div class="text">
-                <a href="/"><span class="name">Ayaan Dhalait</span></a>
-                <p class="subtitle">Web Developer and Ex-CTO</p>
-                <p class="subtitle">You can read my Blogs <a href="/blogs/">Here</a></p>
-            </div>
-    
-            <img src="Ayaan.png" alt="Ayaan PFP" class="pfp">
-        </div>
-    </section>
-
-    <section class="about">
-        <h1>About Me</h1>
-        <p class="subtitle">
-            Hey! I'm <strong>Ayaan Dhalait</strong>, A 13-year-old who just happens to be a web developer and former CTO. I started my journey in the world of tech when I was a 5-year-old trying out scratch by MIT and ever since then its been a dream of mine to become a computer scientist by gradutating with a <strong>Computer Science</strong> degree.
-        </p>
-    </section>
-
-    <section class="socials">
-        <h1>Socials</h1>
-        <a href="https://github.com/AyaanDhalait">Github</a><br>
-        <a href="https://linkedin.com/in/ayaan-dhalait">LinkedIn</a><br>
-        <a href="https://youtube.com/@AyaanDhalait">YouTube</a><br>
-        <a href="https://instagram.com/ayaandhalait">Instagram</a><br>
-        <a href="https://x.com/AyaanDhalait">X/Twitter</a><br>
-    </section>
-
-    <section class="exp">
-        <h1>Experience Roadmap</h1>
-
-        <div class="timeline">
-            <div class="item">
-                <div class="year">2017</div>
-                <div class="content">
-                    <h3>Started Using Scratch By MIT</h3>
-                    <p>Started experimenting with Scratch and basic block-based programming.</p>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="year">2020</div>
-                <div class="content">
-                    <h3>Web Development Begins</h3>
-                    <p>Discovered HTML, CSS and JavaScript. Built first static websites and mini projects.</p>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="year">2022</div>
-                <div class="content">
-                    <h3>Advanced Projects</h3>
-                    <p>Started building interactive web apps and improving UI/UX design skills.</p>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="year">2024</div>
-                <div class="content">
-                    <h3>Became CTO of SIB</h3>
-                    <p>Served as Chief Technology Officer, leading technical direction and projects.</p>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="year">2026 (Current)</div>
-                <div class="content">
-                    <h3>Full-Stack Growth</h3>
-                    <p>Focused on full-stack development, system design, and production-level projects.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="projects">
-    <h1>Projects</h1>
-
-    <div class="project-list">
-
-        <div class="project-card">
-            <h3><a href="https://timetogo.ayaan.is-a.dev/" target="_blank">TimeToGo</a></h3>
-            <p>A CLI based app for finding best and top rated villas and hotels in your area.</p>
-        </div>
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+  
+      <a href="/" class="logo">Ayaan Dhalait</a>
+  
+      <div class="links" id="navLinks">
+        <a href="#about">about()</a>
+        <a href="#projects">projects()</a>
+        <a href="#contact">contact()</a>
+        <a href="#experience">experience()</a>
+        <a href="#education">education()</a>
+        <a href="#skills">tech().stack()</a>
+      </div>
+  
+      <div class="nav-right">
+        <span class="status"><span class="dot"></span> live</span>
+      </div>
+  
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#about">about()</a>
+        <a href="#projects">projects()</a>
+        <a href="#contact">contact()</a>
+        <a href="#experience">experience()</a>
+        <a href="#education">education()</a>
+        <a href="#skills">tech().stack()</a>
+      </div>
+  
     </div>
+  </nav>
+
+<section class="hero">
+  <div class="hero-content">
+
+    <span class="comment typewriter" id="typewriter"></span>
+
+    <h1>
+      Ayaan<br>
+      <span class="gradient">Dhalait</span>
+    </h1>
+
+    <p class="hero-desc">
+      Software Developer
+    </p>
+
+    <div class="hero-cta">
+      <button class="primary" onclick="window.open('https://github.com/AyaanDhalait')">
+        github().visit()
+      </button>
+      <button class="ghost" onclick="window.open('#projects')">
+        view().work()
+      </button>
+    </div>
+
+    <div class="hero-meta">
+      <span><span class="dot"></span> Not availilble for work</span>
+    </div>
+
+  </div>
 </section>
 
+<section id="about" class="section">
+  <div class="container about-wrap">
 
-<section id="contact">
-    <h1>Contact Me</h1>
-    <p class="subtitle">Got something to say? Send a message.</p>
+    <div class="about-left">
+      <span class="comment">// about</span>
+      <h2>My Self Glazing Profile.</h2>
 
-    <form action="https://formspree.io/f/xwvavoee" method="POST" class="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required>
+      <p class="section-text">
+        Hey! I'm <strong>Ayaan Dhalait</strong>, A <span id="age"></span>-year-old who just happens to be a web developer and former CTO. I started my journey in the world of tech when I was a 5-year-old trying out scratch by MIT and ever since then its been a dream of mine to become a computer scientist by gradutating with a <strong>Computer Science</strong> degree.
+      </p>
+      </div>
 
-        <input type="email" name="email" placeholder="Your Email" required>
+    <div class="about-right">
+      <div class="code-block">
+        <div class="code-header">
+          <span></span><span></span><span></span>
+        </div>
+        <pre><code id="about-code"></code></pre>
+      </div>
+    </div>
 
-        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+  </div>
+</section>
 
-        <button type="submit">Send</button>
+<section id="experience" class="section">
+  <div class="container">
+
+    <span class="comment">// journey().log()</span>
+    <h2>Timeline</h2>
+
+    <div class="timeline-grid">
+
+      <div class="timeline-col">
+        <h3>Experience</h3>
+
+        <div class="t-item">
+          <span class="year">2022</span>
+          <p>Started cusing Scratch (MIT)</p>
+        </div>
+
+        <div class="t-item">
+          <span class="year">2023</span>
+          <p>Learnt Basic HTML and CSS from School and continued independently</p>
+        </div>
+
+        <div class="t-item">
+          <span class="year">2025</span>
+          <p>Became CTO @ Student Initiative Board</p>
+        </div>
+
+        <div class="t-item">
+          <span class="year">2026</span>
+          <p>Left Student Initiative Board and Continued Pursuing Computer Science</p>
+        </div>
+
+      </div>
+
+      <div  id="education" class="timeline-col">
+        <h3>Education</h3>
+
+        <div class="t-item">
+          <span class="year">The Bishop’s School</span>
+          <p>Grade 2 - 9</p>
+        </div>
+
+        <div class="t-item">
+          <span class="year">VIBGYOR</span>
+          <p>Grade 1</p>
+        </div>
+
+        <div class="t-item">
+          <span class="year">Hiranandani Foundation School</span>
+          <p>KinderGarden - Grade 1</p>
+        </div>
+
+        <div class="t-item">
+          <span class="year">Tree House</span>
+          <p>Nursery - KinderGarden</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="skills" class="section">
+  <div class="container">
+
+    <span class="comment">// systems.toolbox</span>
+    <h2>Tech Stack</h2>
+
+    <div class="stack-grid">
+
+      <div class="stack-group">
+        <h3>Languages</h3>
+        <div class="stack-items">
+          <span><i class="devicon-python-plain colored"></i> Python</span>
+          <span><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+          <span><i class="devicon-html5-plain colored"></i> HTML</span>
+          <span><i class="devicon-css3-plain colored"></i> CSS</span>
+        </div>
+      </div>
+
+      <div class="stack-group">
+        <h3>Frontend</h3>
+        <div class="stack-items">
+          <span>UI Systems</span>
+          <span>Responsive Design</span>
+          <span>Animations</span>
+          <span>DOM Architecture</span>
+        </div>
+      </div>
+
+      <div class="stack-group">
+        <h3>Backend</h3>
+        <div class="stack-items">
+          <span><i class="devicon-flask-original"></i> Flask</span>
+          <span>REST APIs</span>
+          <span>Server Logic</span>
+        </div>
+      </div>
+
+      <div class="stack-group">
+        <h3>Version Control</h3>
+        <div class="stack-items">
+          <span><i class="devicon-git-plain colored"></i> Git</span>
+          <span><i class="devicon-github-original"></i> GitHub</span>
+        </div>
+      </div>
+
+      <div class="stack-group">
+        <h3>Tools</h3>
+        <div class="stack-items">
+          <span>VS Code</span>
+          <span>CLI tools</span>
+          <span>Debugging</span>
+        </div>
+      </div>
+
+      <div class="stack-group">
+        <h3>Deep Interests</h3>
+        <div class="stack-items">
+          <span>System Design</span>
+          <span>Performance Engineering</span>
+          <span>Minimal UI theory</span>
+          <span>Low-level computing</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <div class="container">
+
+    <span class="comment">// projects</span>
+    <h2>Selected Work</h2>
+
+    <div class="projects">
+
+      <div class="project-card">
+        <div class="project-top">
+          <span class="comment">// media.player</span>
+          <h3>PPlayer</h3>
+        </div>
+
+        <p>Minimal media player built for speed.</p>
+
+        <div class="stack">
+          <span>python</span>
+          <span>ui</span>
+          <span>performance</span>
+        </div>
+
+        <div class="project-footer">
+          <a href="#" onclick="return false;">view_project()</a>
+          <a href="https://github.com/AyaanDhalait" target="_blank">source_code()</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <span class="comment">// utility.toolkit</span>
+          <h3>Quick</h3>
+        </div>
+
+        <p>Utility toolkit designed for efficiency.</p>
+
+        <div class="stack">
+          <span>tools</span>
+          <span>cli</span>
+          <span>automation</span>
+        </div>
+
+        <div class="project-footer">
+          <a href="#" onclick="return false;">view_project()</a>
+          <a href="https://github.com/AyaanDhalait" target="_blank">source_code()</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <span class="comment">// experimental.os</span>
+          <h3>GiggleOS</h3>
+        </div>
+
+        <p>Experimental OS exploring system design.</p>
+
+        <div class="stack">
+          <span>low-level</span>
+          <span>kernel</span>
+          <span>systems</span>
+        </div>
+
+        <div class="project-footer">
+          <a href="#" onclick="return false;">view_project()</a>
+          <a href="https://github.com/AyaanDhalait" target="_blank">source_code()</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="container">
+
+    <span class="comment">// contact</span>
+    <h2>Let's Get in touch.</h2>
+
+    <form action="https://formspree.io/f/xwvavoee" method="POST" class="form">
+      <input type="text" name="name" placeholder="name" required>
+      <input type="email" name="email" placeholder="email" required>
+      <textarea name="message" placeholder="message" required></textarea>
+      <button class="primary">Send Message</button>
     </form>
-</section><br><br>
 
-    <hr width="400px">
+  </div>
+</section>
 
-    <footer>
-        &copy; Ayaan Dhalait. All Rights Reserved.
-    </footer>
+<footer class="footer">
+
+  <div class="footer-grid">
+
+    <div class="footer-col">
+      <span class="comment">// system.identity</span>
+      <h3>Ayaan Dhalait</h3>
+      <p>Software Developer</p>
+    </div>
+
+    <div class="footer-col">
+      <a href="#about">about()</a>
+      <a href="#projects">projects()</a>
+      <a href="#contact">contact()</a>
+      <a href="#experience">experience()</a>
+      <a href="#education">education()</a>
+      <a href="#skills">tech().stack()</a>
+    </div>
+
+    <div class="footer-col">
+      <span class="comment">// social.links</span>
+      <a href="https://github.com/AyaanDhalait">github</a>
+      <a href="https://linkedin.com/in/ayaan-dhalait">linkedin</a>
+      <a href="mailto:ayaan@ayaan.is-a.dev">email</a>
+      <a href="https://youtube.com/@AyaanDhalait">YouTube</a>
+      <a href="https://x.com/AyaanDhalait">X/Twitter</a>
+    </div>
+
+    <div class="footer-col">
+      <span class="comment">// system.status</span>
+      <p><span class="dot"></span> All systems operational</p>
+      <p class="uptime">uptime: <span id="uptime"></span></p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <span class="comment">// © 2026 Ayaan Dhalait. All Rights Reserved.</span>
+  </div>
+
+</footer>
+
+<script>
+const lines = [
+  "// front-end developer",
+  "// python programmer",
+  "// UI/UX enthusiast",
+  "// Ex-CTO",
+  "// Software Developer"
+];
+
+let lineIndex = 0;
+let charIndex = 0;
+let currentLine = "";
+let isDeleting = false;
+
+const typeEl = document.getElementById("typewriter");
+
+function type() {
+  currentLine = lines[lineIndex];
+
+  if (!isDeleting) {
+    typeEl.textContent = currentLine.substring(0, charIndex++);
+  } else {
+    typeEl.textContent = currentLine.substring(0, charIndex--);
+  }
+
+  let speed = isDeleting ? 40 : 70;
+
+  if (!isDeleting && charIndex === currentLine.length + 1) {
+    speed = 1200;
+    isDeleting = true;
+  } else if (isDeleting && charIndex === 0) {
+    isDeleting = false;
+    lineIndex = (lineIndex + 1) % lines.length;
+    speed = 300;
+  }
+
+  setTimeout(type, speed);
+}
+
+type();
+
+const code = `
+<span class="kw">class</span> <span class="class">Ayaan</span>:
+    <span class="kw">def</span> <span class="func">__init__</span>(<span class="param">self</span>):
+        <span class="param">self</span>.<span class="prop">role</span> = <span class="str">"front-end developer"</span>
+        <span class="param">self</span>.<span class="prop">Experience_and_Education</span> = [
+            <span class="str">"Ex-CTO of Student Initiative Board"</span>,
+            <span class="str">"Studied at the bishops school"</span>,
+            <span class="str">"I do not know what to put here"</span>
+        ]
+
+    <span class="kw">def</span> <span class="func">mindset</span>(<span class="param">self</span>):
+        <span class="kw">return</span> <span class="str">"Simplicity is Key"</span>
+
+    <span class="kw">def</span> <span class="func">Featured Projects</span>(<span class="param">self</span>):
+        <span class="kw">return</span> [
+            <span class="str">"PPlayer"</span>,
+            <span class="str">"TimeToGo"</span>,
+            <span class="str">"DhEngine"</span>
+        ]
+    <span class="kw">def</span> <span class="func">certifications</span>(<span class="param">self</span>):
+    <span class="kw">return</span> [
+            <span class="str">"Certified Python Developer"</span>,
+            <span class="str">"IndaFirst Robotics Certification"</span>,
+            <span class="str">"Certification for CS Olympiad School Rank 4"</span>,
+        ]  
+      `;
+    
+
+let i = 0;
+const codeEl = document.getElementById("about-code");
+
+function typeCode() {
+  codeEl.innerHTML = code;
+}
+
+let started = false;
+
+window.addEventListener("scroll", () => {
+  const section = document.querySelector("#about");
+  const rect = section.getBoundingClientRect();
+
+  if (!started && rect.top < window.innerHeight - 100) {
+    started = true;
+    typeCode();
+  }
+});
+
+const startDate = new Date("2012-08-30");
+
+function updateUptime() {
+  const now = new Date();
+  const diff = now - startDate;
+
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+
+  document.getElementById("uptime").textContent = days + "d " + hours + "h";
+}
+
+setInterval(updateUptime, 1000);
+updateUptime();
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href"))
+      .scrollIntoView({ behavior: "smooth" });
+  });
+});
+
+const nav = document.getElementById("navbar");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 40) {
+    nav.classList.add("scrolled");
+  } else {
+    nav.classList.remove("scrolled");
+  }
+});
+
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".links a");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+
+  sections.forEach(section => {
+    const top = section.offsetTop - 120;
+    if (scrollY >= top) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach(a => {
+    a.classList.remove("active");
+    if (a.getAttribute("href") === "#" + current) {
+      a.classList.add("active");
+    }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.getElementById("hamburger");
+  const menu = document.getElementById("mobileMenu");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    menu.classList.toggle("active");
+  });
+
+  document.querySelectorAll(".mobile-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+      hamburger.classList.remove("active");
+      menu.classList.remove("active");
+    });
+  });
+});
+
+const birthDate = new Date("2012-08-30");
+
+function calculateAge() {
+  const now = new Date();
+
+  let age = now.getFullYear() - birthDate.getFullYear();
+  const m = now.getMonth() - birthDate.getMonth();
+
+  if (m < 0 || (m === 0 && now.getDate() < birthDate.getDate())) {
+    age--;
+  }
+
+  document.getElementById("age").textContent = age;
+}
+
+calculateAge();
+</script>
 </body>
 </html>
