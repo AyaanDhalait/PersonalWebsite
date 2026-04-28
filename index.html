@@ -69,11 +69,12 @@
   
       <div class="links" id="navLinks">
         <a href="#about">about()</a>
+        <a href="#projects">projects()</a>
+        <a href="#certifications">certifications()</a>
+        <a href="#contact">contact()</a>
         <a href="#experience">experience()</a>
         <a href="#education">education()</a>
         <a href="#skills">tech().stack()</a>
-        <a href="#projects">projects()</a>
-        <a href="#contact">contact()</a>
       </div>
   
       <div class="nav-right">
@@ -89,6 +90,7 @@
       <div class="mobile-menu" id="mobileMenu">
         <a href="#about">about()</a>
         <a href="#projects">projects()</a>
+        <a href="#certifications">certifications()</a>
         <a href="#contact">contact()</a>
         <a href="#experience">experience()</a>
         <a href="#education">education()</a>
@@ -382,6 +384,57 @@
   </div>
 </section>
 
+<section id="certifications" class="section">
+<div class="container">
+<span class="comment">// certification</span>
+<h2>certifications</h2>
+
+<div class="projects">
+  <div class="project-card">
+    <div class="project-top">
+      <span class="comment">// certification()</span>
+      <h3>Certificate of Investiture</h3>
+    </div>
+
+    <div class="cert-img">
+      <img src="certificate.jpg" alt="CS Olympiad Certificate"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div class="no-img">No Image Available</div>
+    </div>
+
+    <p>Student Co-operative Investiture Ceremony Certificate of Investiture.</p>
+
+    <div class="stack">
+      <span>Co-operation</span>
+      <span>Event Management</span>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-top">
+      <span class="comment">// certification()</span>
+      <h3>IndiaFIRST Robotics Award</h3>
+    </div>
+
+    <div class="cert-img">
+      <img src="certificate-2.jpg" alt="IndiaFIRST Robotics Award"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div class="no-img">No Image Available</div>
+    </div>
+
+    <p>Passed with grade A in IndiaFIRST Robotics Examination</p>
+
+    <div class="stack">
+      <span>Computer Science</span>
+      <span>Robotics</span>
+    </div>
+  </div>
+
+</div>
+</div>
+</section>
+
+
 <section id="contact" class="section">
   <div class="container">
 
@@ -410,12 +463,13 @@
 
     <div class="footer-col">
       <span class="comment">// navigation</span>
-      <a href="#about">about()</a>
-      <a href="#projects">projects()</a>
-      <a href="#contact">contact()</a>
-      <a href="#experience">experience()</a>
-      <a href="#education">education()</a>
-      <a href="#skills">tech().stack()</a>
+        <a href="#about">about()</a>
+        <a href="#projects">projects()</a>
+        <a href="#certifications">certifications()</a>
+        <a href="#contact">contact()</a>
+        <a href="#experience">experience()</a>
+        <a href="#education">education()</a>
+        <a href="#skills">tech().stack()</a>
     </div>
 
     <div class="footer-col">
@@ -496,18 +550,18 @@ const code = `
     <span class="kw">def</span> <span class="func">mindset</span>(<span class="param">self</span>):
         <span class="kw">return</span> <span class="str">"Simplicity is Key"</span>
 
-    <span class="kw">def</span> <span class="func">Featured Projects</span>(<span class="param">self</span>):
+    <span class="kw">def</span> <span class="func">featured_projects</span>(<span class="param">self</span>):
         <span class="kw">return</span> [
             <span class="str">"PPlayer"</span>,
             <span class="str">"TimeToGo"</span>,
             <span class="str">"DhEngine"</span>
         ]
     <span class="kw">def</span> <span class="func">certifications</span>(<span class="param">self</span>):
-    <span class="kw">return</span> [
-            <span class="str">"Certified Python Developer"</span>,
-            <span class="str">"IndaFirst Robotics Certification"</span>,
-            <span class="str">"Certification for CS Olympiad School Rank 4"</span>,
-        ]  
+      <span class="kw">return</span> [
+              <span class="str">"Certified Python Developer"</span>,
+              <span class="str">"IndaFirst Robotics Certification"</span>,
+              <span class="str">"Certification for CS Olympiad School Rank 4"</span>,
+          ]  
       `;
     
 
