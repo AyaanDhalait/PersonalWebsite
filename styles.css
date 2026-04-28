@@ -1091,3 +1091,8 @@ html {
     height: 220px;
   }
 }
+
+.footer-logo {
+  text-decoration: none;
+  color: #fff;
+}
