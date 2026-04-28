@@ -1045,3 +1045,49 @@ html {
 .error-page .footer {
   opacity: 0.9;
 }
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid rgba(0, 255, 150, 0.6);
+  box-shadow: 0 0 40px rgba(0, 255, 150, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: left;
+    padding: 120px 30px 60px;
+    gap: 40px;
+  }
+
+  .hero-image img {
+    width: 220px;
+    height: 220px;
+  }
+}
