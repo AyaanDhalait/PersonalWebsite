@@ -64,12 +64,46 @@ body::before {
   animation: blink 1s infinite;
 }
 
-.links, .about-link {
+.about-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #aaa;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  position: relative;
+  transition: 0.25s ease;
+  cursor: pointer;
+}
+
+.about-link:hover {
+  color: #00ff99;
+}
+
+.about-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 1px;
+  background: #00ff99;
+  transition: width 0.3s ease;
+}
+
+.about-link:hover::after {
+  width: 100%;
+}
+
+.about-link:hover {
+  transform: translateY(-1px);
+}
+
+.links {
   display: flex;
   gap: 32px;
 }
 
-.links, .about-link a {
+.links a {
   text-decoration: none;
   color: #aaa;
   font-family: 'JetBrains Mono', monospace;
@@ -78,11 +112,11 @@ body::before {
   transition: 0.25s;
 }
 
-.links, .about-link a:hover {
+.links a:hover {
   color: #00ff99;
 }
 
-.links, .about-link a::after {
+.links a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -93,7 +127,7 @@ body::before {
   transition: 0.3s;
 }
 
-.links, .about-link a:hover::after {
+.links a:hover::after {
   width: 100%;
 }
 
