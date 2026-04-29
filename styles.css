@@ -64,12 +64,12 @@ body::before {
   animation: blink 1s infinite;
 }
 
-.links {
+.links, .about-link {
   display: flex;
   gap: 32px;
 }
 
-.links a {
+.links, .about-link a {
   text-decoration: none;
   color: #aaa;
   font-family: 'JetBrains Mono', monospace;
@@ -78,11 +78,11 @@ body::before {
   transition: 0.25s;
 }
 
-.links a:hover {
+.links, .about-link a:hover {
   color: #00ff99;
 }
 
-.links a::after {
+.links, .about-link a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -93,7 +93,7 @@ body::before {
   transition: 0.3s;
 }
 
-.links a:hover::after {
+.links, .about-link a:hover::after {
   width: 100%;
 }
 
@@ -108,7 +108,7 @@ body::before {
     padding: 16px 30px;
   }
 
-  .links {
+  .links, .about-link {
     display: none;
   }
 }
