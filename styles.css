@@ -277,6 +277,10 @@ h2 {
   margin-top: 10px;
 }
 
+header h2 {
+  color: #00ff99;
+}
+
 .section-text {
   margin-top: 20px;
   color: #888;
