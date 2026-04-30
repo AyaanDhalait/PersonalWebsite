@@ -142,7 +142,7 @@ body::before {
     padding: 16px 30px;
   }
 
-  .links, .about-link {
+  .links {
     display: none;
   }
 }
