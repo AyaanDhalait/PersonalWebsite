@@ -192,10 +192,10 @@
 
     <div class="about-left">
       <span class="comment">// about</span>
-      <h2>My Self Glazing Profile.</h2>
+      <h2>About Me</h2>
 
       <p class="section-text">
-        Hey! I'm <strong>Ayaan Dhalait</strong>, A <span id="age"></span>-year-old who just happens to be a web developer and former CTO. I started my journey in the world of tech when I was a 5-year-old trying out scratch by MIT and ever since then its been a dream of mine to become a computer scientist by gradutating with a <strong>Computer Science</strong> degree.
+        Hey! I'm <strong>Ayaan Dhalait</strong>, A <span id="age"></span>-year-old who just happens to be a web developer and former CTO. I started my journey in the world of tech when I was a 5-year-old trying out scratch by MIT and ever since then its been a dream of mine to become a computer scientist by gradutating with a <strong>Computer Science</strong> degree. <br><br> I still look at my projects folder with over 100 folders of unfinished projects and see, well folders and I dsometimes like to open them and just see what I built back then. Once I found my old chatbot (not really) and made a small AI model with a lot of If statements so its not really public but this is the reason I like to keep my old projects instead of deleting them since I can steal code from young Ayaa-wait that wasn't in the script umm ok I think I'll end it here so bye!
       </p>
       <p class="section-text">You can view all of my Github Projects at <a href="https://git.ayaan.is-a.dev" class="about-link">git.ayaan.is-a.dev</a></p>
       </div>
@@ -672,8 +672,7 @@ const code = `
         <span class="param">self</span>.<span class="prop">role</span> = <span class="str">"front-end developer"</span>
         <span class="param">self</span>.<span class="prop">Experience_and_Education</span> = [
             <span class="str">"Ex-CTO of Student Initiative Board"</span>,
-            <span class="str">"Studied at the bishops school"</span>,
-            <span class="str">"I do not know what to put here"</span>
+            <span class="str">"Studied at the bishops school"</span>
         ]
 
     <span class="kw">def</span> <span class="func">mindset</span>(<span class="param">self</span>):
@@ -800,6 +799,18 @@ function calculateAge() {
 }
 
 calculateAge();
+
+const timelineItems = document.querySelectorAll(".item");
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+    }
+  });
+}, { threshold: 0.2 });
+
+timelineItems.forEach(item => observer.observe(item));
 </script>
 </body>
 </html>
