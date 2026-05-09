@@ -1,9 +1,8 @@
 const words = [
     "Software Developer",
     "C++ Programmer",
-    "Python Builder",
-    "Future Computer Scientist",
-    "System Thinker"
+    "Python Developer",
+    "Full-Stack Web Developer"
 ];
 
 const typewriter = document.getElementById("typewriter");
