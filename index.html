@@ -1059,11 +1059,11 @@
         </p>
 
         <h2>
-            Let's Build Something <span>Great</span>
+            Let's Get in <span>Touch</span>.
         </h2>
 
         <p class="contact-desc">
-            Have an idea, project, or opportunity? Send a message and let's make it real.
+            Want to talk to me about something?
         </p>
 
 
@@ -1119,53 +1119,51 @@
 
 
 
-    <form class="contact-form">
+<form class="contact-form" action="https://formspree.io/f/xwvavoee" method="POST">
 
-        <div class="input-group">
+    <div class="input-group">
 
-            <label>
-                Your Name
-            </label>
+        <label>Your Name</label>
 
-            <input type="text">
+        <input type="text" name="name" required>
 
-        </div>
+    </div>
 
 
+    <div class="input-group">
 
-        <div class="input-group">
+        <label>Email Address</label>
 
-            <label>
-                Email Address
-            </label>
+        <input type="email" name="email" required>
 
-            <input type="email">
-
-        </div>
+    </div>
 
 
+    <div class="input-group">
 
-        <div class="input-group">
+        <label>Message</label>
 
-            <label>
-                Message
-            </label>
+        <textarea name="message" required></textarea>
 
-            <textarea></textarea>
-
-        </div>
+    </div>
 
 
+    <!-- optional: subject line -->
+    <input type="hidden" name="_subject" value="New message from portfolio">
 
-        <button type="submit">
+    <!-- optional: redirect after submit -->
+    <input type="hidden" name="_redirect" value="https://ayaan.is-a.dev/thanks.html">
 
-            Send Message
 
-            <i class="fa-solid fa-arrow-right"></i>
+    <button type="submit">
 
-        </button>
+        Send Message
 
-    </form>
+        <i class="fa-solid fa-arrow-right"></i>
+
+    </button>
+
+</form>
 
 </section>
 
