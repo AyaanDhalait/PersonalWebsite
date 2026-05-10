@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
     <meta name="description" content="Ayaan Dhalait is a Computer Programmer, Front-End Developer and Ex-CTO of the Student Initiative Board.">
@@ -1150,34 +1151,34 @@
             </div>
 
 
-<div class="meta-card">
+            <div class="meta-card">
 
-    <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-linkedin"></i>
 
-    <div>
+                <div>
 
-        <span>LinkedIn</span>
+                    <span>LinkedIn</span>
 
-        <p>ayaan-dhalait</p>
+                    <p>ayaan-dhalait</p>
 
-    </div>
+                </div>
 
-</div>
+            </div>
 
 
-<div class="meta-card">
+            <div class="meta-card">
 
-    <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-x-twitter"></i>
 
-    <div>
+                <div>
 
-        <span>X / Twitter</span>
+                    <span>X / Twitter</span>
 
-        <p>@AyaanDhalait</p>
+                    <p>@AyaanDhalait</p>
 
-    </div>
+                </div>
 
-</div>
+            </div>
 
         </div>
 
@@ -1185,51 +1186,80 @@
 
 
 
-<form class="contact-form" action="https://formspree.io/f/xwvavoee" method="POST">
+    <form class="contact-form"
+    id="contactForm">
 
-    <div class="input-group">
+        <div class="input-group">
 
-        <label>Your Name</label>
+            <label>Your Name</label>
 
-        <input type="text" name="name" required>
+            <input
+            type="text"
+            name="name"
+            required>
+
+        </div>
+
+
+        <div class="input-group">
+
+            <label>Email Address</label>
+
+            <input
+            type="email"
+            name="email"
+            required>
+
+        </div>
+
+
+        <div class="input-group">
+
+            <label>Message</label>
+
+            <textarea
+            name="message"
+            required></textarea>
+
+        </div>
+
+
+        <button
+        type="submit"
+        id="sendBtn">
+
+            <span id="btnText">
+
+                Send Message
+
+            </span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </button>
+
+    </form>
+
+
+
+    <div class="success-popup"
+    id="successPopup">
+
+        <div class="popup-card">
+
+            <i class="fa-solid fa-circle-check"></i>
+
+            <h3>
+                Message Sent.
+            </h3>
+
+            <p>
+                Thanks for reaching out.
+            </p>
+
+        </div>
 
     </div>
-
-
-    <div class="input-group">
-
-        <label>Email Address</label>
-
-        <input type="email" name="email" required>
-
-    </div>
-
-
-    <div class="input-group">
-
-        <label>Message</label>
-
-        <textarea name="message" required></textarea>
-
-    </div>
-
-
-    <!-- optional: subject line -->
-    <input type="hidden" name="_subject" value="New message from portfolio">
-
-    <!-- optional: redirect after submit -->
-    <input type="hidden" name="_redirect" value="https://ayaan.is-a.dev/thanks.html">
-
-
-    <button type="submit">
-
-        Send Message
-
-        <i class="fa-solid fa-arrow-right"></i>
-
-    </button>
-
-</form>
 
 </section>
 
