@@ -204,9 +204,16 @@ e.preventDefault();
 if(btnText) btnText.textContent = "Sending...";
 
 try{
+
 await emailjs.sendForm(
 "service_fewot77",
 "template_nvasqqd",
+form
+);
+
+await emailjs.sendForm(
+"service_fewot77",
+"template_xlzufoi",
 form
 );
 
@@ -214,6 +221,7 @@ if(btnText) btnText.textContent = "Sent";
 
 if(popup){
 popup.classList.add("show");
+
 setTimeout(()=>{
 popup.classList.remove("show");
 if(btnText) btnText.textContent = "Send Message";
